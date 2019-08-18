@@ -28,6 +28,10 @@
 				font-size: 3.5rem;
 			}
 		}
+
+		nav {
+			margin-bottom: 20px;
+		}
 	</style>
 	<!-- Custom styles for this template -->
 	<link href="./style/dashboard.css" rel="stylesheet">
@@ -35,50 +39,19 @@
 @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
 
 
-<header id="header" class="">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a href="#" class="navbar-brand"><img src="image/logo.png" alt="5anhem.com" class="logo"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link active" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Nhà Thuê</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Căn Hộ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Nhà Trọ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Phòng Cho Thuê</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Tin Tức</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Tuyển Dụng</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Liên Hệ</a>
-					</li>
-					<button type="button" class="btn btn-success btn-dangnhap">Đăng Nhập </button>
-					<button type="button" class="btn btn-danger"> Đăng Kí </button>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	
-</header><!-- /header -->
+<nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="./dashboard.html">Quan li nha thue</a>
+	<!--<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">-->
+	<ul class="navbar-nav px-3">
+	  <li class="nav-item text-nowrap">
+		<a class="nav-link" href="./login.html">Dang xuat</a>
+	  </li>
+	</ul>
+  </nav>
 
 <main id="lich-hen">
 	<div class="container">
+		<h1 class="h2">Tạo lịch hẹn</h1>
 		<form >
 			<div class="form-group row">
 				<label for="maKhachHang" class="col-sm-2 col-form-label">Mã Khách Hàng:</label>
