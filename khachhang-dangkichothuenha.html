@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)./dashboard.html -->
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<title>Đăng ký cho thuê nhà</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
+
+	<!-- Bootstrap core CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		nav {
+			margin-bottom: 20px;
+		}
+
+		footer {
+          background-color: #343A40;
+          color: white;
+          margin-top: 50px;
+      }
+      .footer-copyright {
+        background-color: #262B30;
+        color:white;
+      }
+	  footer a {
+		color:white;
+	  }
+	</style>
+	<!-- Custom styles for this template -->
+	<link href="./style/dashboard.css" rel="stylesheet">
+	<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+
+
+<nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="./dashboard.html">Quan li nha thue</a>
+	<!--<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">-->
+	<ul class="navbar-nav px-3">
+	  <li class="nav-item text-nowrap">
+		<a class="nav-link" href="./login.html">Dang xuat</a>
+	  </li>
+	</ul>
+  </nav>
+
+<main id="lich-hen">
+	<div class="container">
+		<h1 class="h2">Đăng ký cho thuê nhà</h1>
+		<form >
+			<div class="form-group row">
+				<label for="sonha" class="col-sm-2 col-form-label">Số nhà</label>
+				<div class="col-sm-10">
+					<input  type="text" id="sonha" class=" form-control " value="255" /> 
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="duong" class="col-sm-2 col-form-label">Đường</label>
+				<div class="col-sm-10">
+					<input  type="text" id="duong" class=" form-control " value="Tô Hiến Thành" /> 
+				</div>
+			</div>
+            <div class="form-group row">
+				<label for="quan" class="col-sm-2 col-form-label">Quận</label>
+				<div class="col-sm-10">
+					<input  type="text" id="quan" class=" form-control " value="Quận 10" /> 
+				</div>
+			</div>
+            <div class="form-group row">
+				<label for="thanhpho" class="col-sm-2 col-form-label">Thàn Phố</label>
+				<div class="col-sm-10">
+					<input  type="text" id="thanhpho" class=" form-control " value="TP Hồ Chí Minh" /> 
+				</div>
+			</div>
+            <div class="form-group row">
+				<label for="khuvuc" class="col-sm-2 col-form-label">Khu vực</label>
+				<div class="col-sm-10">
+					<select class="form-control" id="tenkhuvuc" >
+						<option>Tây Bắc Bộ</option>
+						<option>Đông Bắc Bộ</option>
+						<option>Đồng Bằng Sông Hồng</option>
+						<option>Bắc Trung Bộ</option>
+						<option>Duyên hải Nam Trung Bộ</option>
+                        <option>Tây Nguyên</option>
+                        <option>Đông Nam Bộ</option>
+                        <option>Tây Nam Bộ</option>
+					</select>
+				</div>
+			</div>
+            <div class="form-group row">
+				<label for="soluongphong" class="col-sm-2 col-form-label">Số lượng phòng</label>
+				<div class="col-sm-10">
+					<input  type="text" id="soluongphong" class=" form-control " value="7" /> 
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="tienthue" class="col-sm-2 col-form-label">Tiền thuê</label>
+				<div class="col-sm-10">
+					<input  type="text" id="tienthue" class=" form-control " value="7,000,000" /> 
+				</div>
+			</div>
+            <div class="form-group row">
+				<label for="tenchinhanh" class="col-sm-2 col-form-label">Tên chi nhánh</label>
+				<div class="col-sm-10">
+					<select class="form-control" id="tenchinhanh" >
+						<option>TP_HCM</option>
+						<option>TP_Hà Nội</option>
+						<option>Thừa Thiên Huế</option>
+						<option>Đà Nẳng</option>
+						<option>TP_Hải Phòng</option>
+					</select>
+				</div>
+
+			</div>
+			<button type="button" class="btn btn-success">Tạo Nhà Thuê</button>
+		</form>
+	</div>
+</main>
+<footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase">Công Ty 5 Anh Em</h5>
+              <p>Địa Chỉ: 225 Nguyễn Văn Củ, Quận 5, TpHCM</p>
+			  <p>HotLine: 0123456789</p>
+			  <p>Email: lienhe@5anhemdienquang.com</p>
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Về Chúng Tôi</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Giới Thiệu</a>
+                </li>
+                <li>
+                  <a href="#!">Tầm Nhìn</a>
+                </li>
+                <li>
+                  <a href="#!">Giá Trị Cốt Lỗi</a>
+                </li>
+                <li>
+                  <a href="#!">Sứ Mệnh</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Hỗ Trợ</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Liên Hệ</a>
+                </li>
+                <li>
+                  <a href="#!">Quy Chế Hoạt Động</a>
+                </li>
+                <li>
+                  <a href="#!">Điều Khoản Sử Dụng</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+	<div class="quick-alo-phone quick-alo-green quick-alo-show" id="quick-alo-phoneIcon">
+		<a href="tel:123456789" class="info topopup btn">
+			<div class="quick-alo-ph-circle"></div>
+			<div class="quick-alo-ph-circle-fill"></div>
+			<div class="quick-alo-ph-img-circle"></div>
+		</a>
+		<section class="call-hotline">
+		0123 456 789</section><!-- end .box-support -->
+	</div>
+	<!--Start of Tawk.to Script-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d5941b477aa790be32f75ab/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
+</footer>
