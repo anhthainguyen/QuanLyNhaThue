@@ -88,179 +88,60 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Quản lý người dùng</h1>
+        <h1 class="h2">Phê duyệt thông tin nhà</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Nhân viên
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
         </div>
       </div>
-      <div class="search-input input-group mb-3">
-          <input type="text" class="form-control" placeholder="Nhập tên/mã nhân viên" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button">Tìm kiếm</button>
+      <form>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Chưa xác nhận</label>
           </div>
-        </div>
-      <div class="table-responsive">
-          <nav aria-label="Page navigation example">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Tên</th>
-              <th>Địa chỉ</th>
-              <th>Số điện thoại</th>
-              <th>Ngày sinh</th>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Nguyễn Văn A</td>
-              <td>34/2/5 Kaka</td>
-              <td>123456789</td>
-              <td>1/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Huỳnh Bảo C</td>
-              <td>34/56/22 Phan Vna</td>
-              <td>325623232</td>
-              <td>2/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Sogenku</td>
-              <td>ipsum</td>
-              <td>235325</td>
-              <td>3/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Toro</td>
-              <td>45/2/4 Tokyo</td>
-              <td>632623632</td>
-              <td>4/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Sengoku</td>
-              <td>33/42/1 LA</td>
-              <td>632623626</td>
-              <td>5/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Han koro</td>
-              <td>334/2/33 Peterburgh</td>
-              <td>63263266</td>
-              <td>6/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Ong Bak</td>
-              <td>33/2/2/3 Bangkok</td>
-              <td>434033636</td>
-              <td>7/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Cao Văn Z</td>
-              <td>3/2/1 Phan Văn Trị</td>
-              <td>58390222</td>
-              <td>8/1/1990</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Liu Liu</td>
-              <td>33/4/4 Bejing</td>
-              <td>030530435</td>
-              <td>9/1/1970</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>San Tos</td>
-              <td>3333/3 Paris</td>
-              <td>112213443</td>
-              <td>1/3/1980</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>Fukei</td>
-              <td>3492/3 Miami</td>
-              <td>03533929</td>
-              <td>1/5/1989</td>
-              <td><a class="btn btn-primary btn-sm" href="#">Sửa</a></td>
-              <td><a class="btn btn-danger btn-sm" href="#">Xóa</a></td>
-            </tr>                                                                                                                         
-          </tbody>
-        </table>
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">...</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Đã xác nhận</label>
+            </div>
+        </form>
+
+        <div class="row" style="margin-top: 10px">
+          <div class="col-md-3">
+              <div class="card">
+                  <img class="card-img-top" src="image/nhaso1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Nhà số 1 <span class="badge badge-danger badge-pill">Mới</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-success">Xác nhận</a>
+                    <a href="#" class="btn btn-primary">Chi tiết</a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="card">
+                  <img class="card-img-top" src="image/nhaso2.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Nhà 2 lầu <span class="badge badge-danger badge-pill">Mới</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-success">Xác nhận</a>
+                    <a href="#" class="btn btn-primary">Chi tiết</a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="card">
+                  <img class="card-img-top" src="image/nhaso3.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Nhà có ban công <span class="badge badge-danger badge-pill">Mới</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-success">Xác nhận</a>
+                    <a href="#" class="btn btn-primary">Chi tiết</a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md-3">
+          </div>
       </div>
     </main>
     
