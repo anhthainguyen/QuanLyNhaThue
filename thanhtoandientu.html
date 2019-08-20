@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)./dashboard.html -->
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Quan ly nha thue</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      nav {
+          margin-bottom: 20px
+      }
+
+      footer {
+          background-color: #343A40;
+          color: white;
+          margin-top: 50px;
+      }
+      .footer-copyright {
+        background-color: #262B30;
+        color:white;
+      }
+      	  footer a {
+		color:white;
+	  }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./style/dashboard.css" rel="stylesheet">
+  <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+  <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="./dashboard.html">Quan li nha thue</a>
+  <!--<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">-->
+</nav>
+<main class="login-form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Thanh toán điện tử</div>
+                    <div class="card-body">
+                        <form action="" method="">
+                            <div class="form-group row">
+                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Quốc gia:</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="password-old" class="form-control" name="password-old" required autofocus>
+                                </div>
+                            </div>
+    
+                            
+              
+							<div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Họ tên</label>
+                                <div class="col-md-6">
+                                    <input type="password" id="password" class="form-control" name="password-new" required>
+                                </div>
+              </div>
+              <div class="form-group row">
+                <label for="password" class="col-md-4 col-form-label text-md-right">Địa chỉ: </label>
+                <div class="col-md-6">
+                    <input type="password" id="password" class="form-control" name="password-new" required>
+                </div>
+</div>
+              <div class="form-group row">
+                <label for="password" class="col-md-4 col-form-label text-md-right">Tỉnh/Thành phố:</label>
+                <div class="col-md-6">
+                    <input type="password" id="password" class="form-control" name="password-new" required>
+                </div>
+</div>
+<div class="form-group row">
+  <label for="password" class="col-md-4 col-form-label text-md-right">Số điện thoại:</label>
+  <div class="col-md-6">
+      <input type="password" id="password" class="form-control" name="password-new" required>
+  </div>
+</div>
+<div class="form-group row">
+  <label for="password" class="col-md-4 col-form-label text-md-right">Email:</label>
+  <div class="col-md-6">
+      <input type="password" id="password" class="form-control" name="password-new" required>
+  </div>
+</div>
+<div class="panel panel-info">
+  <div class="panel-heading"><span><i class="glyphicon glyphicon-lock"></i></span> Secure Payment</div>
+  <div class="panel-body">
+      <div class="form-group">
+          <div class="col-md-12"><strong>Card Type:</strong></div>
+          <div class="col-md-12">
+              <select id="CreditCardType" name="CreditCardType" class="form-control">
+                  <option value="5">Visa</option>
+                  <option value="6">MasterCard</option>
+                  <option value="7">American Express</option>
+                  <option value="8">Discover</option>
+              </select>
+          </div>
+      </div>
+      <div class="form-group">
+          <div class="col-md-12"><strong>Credit Card Number:</strong></div>
+          <div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+      </div>
+      <div class="form-group">
+          <div class="col-md-12"><strong>Card CVV:</strong></div>
+          <div class="col-md-12"><input type="text" class="form-control" name="car_code" value="" /></div>
+      </div>
+      <div class="form-group">
+          <div class="col-md-12">
+              <strong>Expiration Date</strong>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <select class="form-control" name="">
+                  <option value="">Month</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+          </select>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <select class="form-control" name="">
+                  <option value="">Year</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+          </select>
+          </div>
+      </div>
+      <div class="form-group">
+          <div class="col-md-12">
+              <span>Pay secure using your credit card.</span>
+          </div>
+          <div class="col-md-12">
+              <ul class="cards">
+                  <li class="visa hand">Visa</li>
+                  <li class="mastercard hand">MasterCard</li>
+                  <li class="amex hand">Amex</li>
+              </ul>
+              <div class="clearfix"></div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--CREDIT CART PAYMENT END-->
+</div>
+                            <div class="col-md-6 offset-md-4">
+                                <a class="btn btn-primary" href="#" role="button">Lưu</a>
+                            </div>
+                    </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase">Công Ty 5 Anh Em</h5>
+              <p>Địa Chỉ: 225 Nguyễn Văn Củ, Quận 5, TpHCM</p>
+			  <p>HotLine: 0123456789</p>
+			  <p>Email: lienhe@5anhemdienquang.com</p>
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Về Chúng Tôi</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Giới Thiệu</a>
+                </li>
+                <li>
+                  <a href="#!">Tầm Nhìn</a>
+                </li>
+                <li>
+                  <a href="#!">Giá Trị Cốt Lỗi</a>
+                </li>
+                <li>
+                  <a href="#!">Sứ Mệnh</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Hỗ Trợ</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Liên Hệ</a>
+                </li>
+                <li>
+                  <a href="#!">Quy Chế Hoạt Động</a>
+                </li>
+                <li>
+                  <a href="#!">Điều Khoản Sử Dụng</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+                  
+<script src="./script/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="./script/jquery-slim.min.js"><\/script>')</script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="./script/feather.min.js"></script>
+        <script src="./script/Chart.min.js"></script>
+        <script src="./script/dashboard.js"></script>
